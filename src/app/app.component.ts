@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { InfopaginaService } from './services/infopagina.service';
+import { ProductosService } from './services/productos.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { InfopaginaService } from './services/infopagina.service';
 })
 export class AppComponent {
   title = 'portafolio';
-  constructor(public InfopaginaService: InfopaginaService) {
+  constructor(public InfopaginaService: InfopaginaService,public productosServices:ProductosService) {
     console.log()
   }
   
